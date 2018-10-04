@@ -213,7 +213,7 @@ h3 {
 	justify-content: space-around;
 	align-items:  center;
 	font-size: 28px;
-	display: none;
+	
 }
 .nav-link {
 	color: #f1ead1;
@@ -230,7 +230,7 @@ h3 {
 }
 #welcome-section>h1 {
 	opacity: 0;
-	animation: drop-h var(--drop-h-time) ease-in forwards;
+	animation: drop-h var(--drop-h-time) ease forwards;
 	animation-delay: 3.5s;
 	margin-top: -2%;
 }
@@ -239,7 +239,7 @@ h3 {
 	animation: drop-h var(--drop-h-time) ease-out forwards;
 	animation-delay: 4.6s;
 	letter-spacing: 2px;
-	margin-left: 8%;
+	margin-left: 7%;
 	
 
 }
