@@ -98,7 +98,7 @@ html body {
 #logo-space {
 	position: absolute;
 	z-index: 2;
-	top: 35%;
+	top: 250px;
 	width: 110%;
 	text-align: center;
 	padding: auto;
@@ -109,7 +109,7 @@ html body {
 		width: 90%;
 	}
 	100% {
-		width: 0vw;
+		width: 0%;
 	}
 }
 #logo-mask {
@@ -204,7 +204,7 @@ h3 {
 	justify-content: space-around;
 	align-items:  center;
 	font-size: 28px;
-	display: none;
+	/* display: none; */
 }
 .nav-link {
 	color: #f1ead1;
