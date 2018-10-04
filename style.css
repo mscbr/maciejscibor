@@ -69,7 +69,7 @@ html body {
 	/*variables for opening animation*/
 	--opening-time: 6s;
 	--timing-function: cubic-bezier(.1,.44,.53,.99);
-	--logo-delay: 2.2s;
+	--logo-delay: 3s;
 }
 #loading-mask {
 	position: fixed;
@@ -98,10 +98,10 @@ html body {
 	position: absolute;
 	z-index: 2;
 	top: 35%;
-	width: 100%;
+	width: 110%;
 	text-align: center;
+	padding: auto;
 	animation: logo-space-off var(--opening-time) ease-out forwards;	
-	/* animation-delay: var(--logo-delay); */
 }
 @keyframes logo-space-off {
 	99% {
@@ -116,9 +116,9 @@ html body {
 	height: 110px;
 	background-color: #f1ead1;
 	/* border: 1px solid red; */
-	width: 70%;
-	margin-left: 15%;
-	animation: shrink-up 1.6s ease-in-out forwards;
+	width: 600px;
+	animation: shrink-up 3s ease-in-out forwards;
+	left: 24%;
 }
 @keyframes shrink-up {
 	100% {
@@ -130,7 +130,7 @@ html body {
 	font-size: 111px;
 	letter-spacing: 5px;
 	font-style: italic;
-	animation: invisible 2.5s linear forwards;
+	animation: invisible 4s linear forwards;
 	text-shadow: 0px 0px rgba(37,73,113,1);
 }
 
