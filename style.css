@@ -48,6 +48,13 @@ table {
 	border-spacing: 0;
 }
 
+
+
+
+
+
+
+
 /*MAIN PART OF STYLING*/
 
 html body {
@@ -60,9 +67,9 @@ html body {
 /*INTRO ANIMATION*/
 :root {
 	/*variables for opening animation*/
-	--opening-time: 3s;
+	--opening-time: 6s;
 	--timing-function: cubic-bezier(.1,.44,.53,.99);
-	--logo-delay: 0.1s;
+	--logo-delay: 2.2s;
 }
 #loading-mask {
 	position: fixed;
@@ -74,7 +81,7 @@ html body {
 	animation-name: loading-screen-off;
 	animation-duration: var(--opening-time);
 	animation-fill-mode: forwards;
-	/* animation-delay: var(--logo-delay); */
+	animation-delay: var(--logo-delay);
 }
 @keyframes loading-screen-off {
 	99% {
@@ -93,7 +100,16 @@ html body {
 	top: 35%;
 	width: 100%;
 	text-align: center;
-	
+	animation: logo-space-off var(--opening-time) ease-out forwards;	
+	/* animation-delay: var(--logo-delay); */
+}
+@keyframes logo-space-off {
+	99% {
+		width: 90%;
+	}
+	100% {
+		width: 0vw;
+	}
 }
 #logo-mask {
 	position: absolute;
@@ -114,13 +130,19 @@ html body {
 	font-size: 111px;
 	letter-spacing: 5px;
 	font-style: italic;
-	animation: invisible 2s linear forwards;
+	animation: invisible 2.5s linear forwards;
 	text-shadow: 0px 0px rgba(37,73,113,1);
 }
 
 @keyframes invisible {
+	75% {
+		text-shadow: -10px 0px #f1ead1;
+	}
+	76% {
+		text-shadow: -10px 0px rgba(37,73,113,0);
+	}
 	100% {
-		text-shadow: -10px 0px white;
+		text-shadow: -10px 0px rgba(37,73,113,0);
 		visibility: hidden;
 	}
 }
@@ -137,7 +159,7 @@ html body {
 	animation-duration: var(--opening-time);
 	animation-timing-function: var(--timing-function);
 	animation-fill-mode: forwards;
-	/* animation-delay: var(--logo-delay); */
+	animation-delay: var(--logo-delay);
 }
 #mask-right {
 	position:  relative;
@@ -150,12 +172,12 @@ html body {
 	animation-duration: var(--opening-time);
 	animation-timing-function: var(--timing-function);
 	animation-fill-mode: forwards;
-	/* animation-delay: var(--logo-delay); */
+	animation-delay: var(--logo-delay);
 }
 @keyframes mask-open {
-	70% {
+	/* 70% {
 		width: 51%;
-	}
+	} */
 	100% {
 		width: 0%;
 	}
