@@ -145,6 +145,7 @@ html body {
 @keyframes invisible {
 	78% {
 		text-shadow: -10px 0px #f1ead1;
+		
 	}
 	85% {
 		text-shadow: -10px 0px rgba(37,73,113,0);
@@ -210,28 +211,36 @@ h3 {
 	display:  flex;
 	justify-content: center;
 	align-items:  center;
-	font-size: 20px;
+	font-size: 18px;
+	/* transition: 0.3s; */
 }
 #nav-logo {
+	color: #f1ead1;
 	font-size: 12px;
 	font-style: italic;
 	letter-spacing: 1px;
-	margin-left: 25px;
+	margin-left: 2%;
 	border: solid 0.5px;
 	border-radius: 10px;
 	padding: 5px;
 	padding-right: 3px;
-	
 }
 .nav-link {
 	color: #f1ead1;
 	text-decoration: none;
-	margin-left: 100px;
-	margin-right: 150px;
+	margin-left: 10%;
+	margin-right: 5%;
 	opacity: 0.4;
+	height: 50px;
+	width: auto;
+	transition: 0.4s;
+	padding-top: 27px;
 }
 .nav-link:hover {
 	cursor: pointer;
+	opacity: 1;
+	transform: translateY(27px);
+	border-bottom:  1px solid;
 }
 #welcome-section {
 	padding: 25%;
