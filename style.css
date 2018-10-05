@@ -75,7 +75,6 @@ html body {
 }
 
 
-
 #loading-mask {
 	position: fixed;
 	margin-left: -70%;
@@ -86,7 +85,6 @@ html body {
 	animation-name: loading-screen-off;
 	animation-duration: 6s;
 	animation-fill-mode: forwards;
-	/* animation-delay: 1s; */
 }
 @keyframes loading-screen-off {
 	99% {
