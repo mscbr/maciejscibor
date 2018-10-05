@@ -84,9 +84,9 @@ html body {
 	z-index: 1;
 	transform: skewX(45deg);
 	animation-name: loading-screen-off;
-	animation-duration: var(--opening-time);
+	animation-duration: 6s;
 	animation-fill-mode: forwards;
-	animation-delay: var(--logo-delay);
+	/* animation-delay: 1s; */
 }
 @keyframes loading-screen-off {
 	99% {
