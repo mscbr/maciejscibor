@@ -124,7 +124,6 @@ html body {
 	position: absolute;
 	height: 130px;
 	background-color: #f1ead1;
-	/* border: 1px solid red; */
 	width: 600px;
 	animation: shrink-up 2.7s ease-out forwards;
 	left: 23%;
@@ -138,9 +137,9 @@ html body {
 }
 #logo {
 	color: #1e0741;
-	font-size: 111px;
+	font-size: 75px;
 	font-weight: 900;
-	letter-spacing: 5px;
+	letter-spacing: 3px;
 	font-style: italic;
 	animation: invisible 3.5s linear forwards;
 	text-shadow: 0px 0px rgba(37,73,113,1);
@@ -348,6 +347,18 @@ a {
 
 /*MEDIA QUERRIES*/
 @media only screen and (max-width: 650px) {
+	/*INTRO*/
+	#mask-left, #mask-right {
+		display:none;
+	}
+	#loading-mask {
+		display:none;
+	}
+	#logo-mask {
+		display: none;
+	}
+
+	
 	#welcome-section {
 		height:  100vh;
 		width: 100vw;
@@ -357,9 +368,6 @@ a {
 	}
 	h3 {
 		font-size: 20px;
-	}
-	#mask-left, #mask-right {
-		display:none;
 	}
 	#navbar {
 		font-size: 15px;
