@@ -72,10 +72,12 @@ html body {
 	--timing-function: cubic-bezier(.1,.44,.53,.99);
 	--logo-delay: 3s;
 	--drop-h-time: 0.8s;
+	--intro-display: none;
 }
 
 
 #loading-mask {
+	display: var(--intro-display);
 	position: fixed;
 	margin-left: -70%;
 	height: 100vh;
@@ -104,6 +106,7 @@ html body {
 }
 /*logo animation*/
 #logo-space {
+	display: var(--intro-display);
 	position: absolute;
 	z-index: 3;
 	top: 250px;
@@ -339,35 +342,47 @@ a {
 #projects {
 	position:  relative;
 	height: 100vh;
-	background-color: #254971;
+	/* background-color: #254971; */
+	background: linear-gradient(180deg, rgba(241,234,209,0.34) 0%, rgba(37,73,113,1) 50px);
 	z-index: -1;
-	padding-top: 20px;
-
+	padding-top: 50px;
 	display: grid;
-  	grid-template-columns: 12% auto;
-  	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 8% auto;
+	grid-template-rows: 1fr 1fr 1fr;
 	grid-template-areas: "tab1 tab-display"
-	  					 "tab2 tab-display";
+						"tab2 tab-display"
+						"tab3 tab-display";
+}
+.tab-button {
+	background-color: transparent;
+	color: #f1ead1;
+	font-size: 17px;
+	font-weight: 300;
+	border: 0.5px solid #f1ead1;
+	margin: 2px;
+	border-radius: 10px;
+}
+.tab-on {
+	border-right: none;
 }
 #tab1-button {
 	grid-area: tab1;
-
 }
 #tab2-button {
 	grid-area: tab2;
 }
+#tab3-button {
+	grid-area: tab3;
+}
 #tab1 {
 	grid-area: tab-display;
-	border: 1px solid red;
-	/* height: 100%;
-	width: 100%; */
+	/* border: 1px solid red; */
 }
 #tab2 {
 	display: none;
 	grid-area: tab-display;
 	border: 1px solid red;
-	/* height: 100%;
-	width: 100%; */
+
 }
 
 
