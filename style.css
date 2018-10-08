@@ -441,10 +441,20 @@ a {
 		font-size: 14px;
 		padding-left: 30px;
 	}
+	.sidebar {
+		width: 100%;
+		height: 55px;
+		padding-left: 0px;
+		font-size: 18px;
+		display: flex;
+		flex-direction: initial;
+		justify-content: center;
+		align-items:  center;
+		transition: 0.4s;
+	}
 	.nav-link {
 		margin-left: 4%;
-		margin-right: 3%;
-		
+		margin-right: 3%;	
 	}
 	.nav-link:hover {
 		transform: translateY(5px);
