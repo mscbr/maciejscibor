@@ -365,16 +365,24 @@ a {
 						"ds ds icon-ds";
 }
 #websites {
+	display: flex;
+	align-items: stretch;
 	grid-area: websites;
 	border: 1px lime dashed;
 }
 #web-apps {
+	display: flex;
 	grid-area: web-apps;
 	border: 1px lime dashed;
 }
 #data-science {
+	display: flex;
 	grid-area: ds;
 	border: 1px lime dashed;
+}
+.project-tile {
+	border: 1px orange solid;
+	width: 100%;
 }
 
 
