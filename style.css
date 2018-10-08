@@ -64,6 +64,7 @@ html body {
 	height: 100%;
 	width: 100%;
 	line-height:  1.3;
+	scroll-behavior: smooth;
 }
 /*INTRO ANIMATION*/
 :root {
@@ -340,12 +341,40 @@ a {
 	}
 }
 #projects {
-	position:  relative;
+	position: relative;
 	height: 100vh;
 	background: linear-gradient(180deg, rgba(241,234,209,0.34) 0%, rgba(37,73,113,1) 50px);
 	z-index: -1;
 	padding-top: 50px;
-
+	
+}
+#projects-grid {
+	border: 2px solid red;
+	display: grid;
+	width: 80%;
+	height: 95%;
+	margin: 15px auto;
+	padding: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 20px;
+	grid-template-areas: "websites websites icon-web"
+						"icon-app web-apps web-apps"
+						"ds ds icon-ds";
+}
+#websites {
+	grid-area: websites;
+	border: 1px lime dashed;
+}
+#web-apps {
+	grid-area: web-apps;
+	border: 1px lime dashed;
+}
+#data-science {
+	grid-area: ds;
+	border: 1px lime dashed;
 }
 
 
