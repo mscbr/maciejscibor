@@ -220,7 +220,6 @@ a {
 #navbar {
 	position: fixed;
 	background-color: transparent;
-
 	animation: slide-down 0.8s ease-out forwards;
 	animation-delay: 5s;
 	transform: translateY(-50px);
@@ -233,15 +232,17 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items:  center;
+	transition: 0.4s;
 }
 .sidebar {
 	width: 10%;
-	height: 70%;
+	height: 76%;
 	font-size: 15px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items:  center;
+	transition: 0.4s;
 }
 @keyframes slide-down {
 
