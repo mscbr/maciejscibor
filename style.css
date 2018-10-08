@@ -349,7 +349,7 @@ a {
 	
 }
 #projects-grid {
-	border: 2px solid red;
+	/* border: 2px solid red; */
 	display: grid;
 	width: 80%;
 	height: 95%;
@@ -364,26 +364,39 @@ a {
 						"icon-app web-apps web-apps"
 						"ds ds icon-ds";
 }
-#websites {
+.projects-section {
 	display: flex;
-	align-items: stretch;
-	grid-area: websites;
+	border-radius: 15px;
 	border: 1px lime dashed;
+	background-color: rgba(30,7,65, 0.6);
+	z-index: 2;
+	
+}
+#websites {	
+	grid-area: websites;
 }
 #web-apps {
-	display: flex;
 	grid-area: web-apps;
-	border: 1px lime dashed;
 }
 #data-science {
-	display: flex;
 	grid-area: ds;
-	border: 1px lime dashed;
 }
 .project-tile {
-	border: 1px orange solid;
+	/* border: 1px orange solid; */
 	width: 100%;
 }
+.tiles-icon {
+	height: 90%;
+	width: auto;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+.proj-icon {
+	height: 50%;
+	width: auto;
+}
+
 
 
 
