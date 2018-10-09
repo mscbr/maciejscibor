@@ -223,6 +223,7 @@ a:hover {
 }
 #navbar {
 	position: fixed;
+	
 	background-color: transparent;
 	animation: slide-down 0.8s ease-out forwards;
 	animation-delay: 5s;
@@ -232,22 +233,25 @@ a:hover {
 .horizontal-bar {
 	width: 100%;
 	height: 55px;
+	color: #f1ead1;
 	padding-left: 0px;
 	font-size: 18px;
 	display: flex;
 	justify-content: center;
 	align-items:  center;
-	transition: 0.4s;
+	transition: 0.3s;
 }
 .sidebar {
 	width: 10%;
 	height: 76%;
+	color:rgb(5,17,24);
 	font-size: 15px;
+	font-weight: 800;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items:  center;
-	transition: 0.4s;
+	transition: 0.3s;
 }
 @keyframes slide-down {
 
@@ -268,11 +272,12 @@ a:hover {
 	padding-right: 3px;
 }
 .nav-link {
-	color: #f1ead1;
+	/* color: #f1ead1; */
+	color: inherit;
 	text-decoration: none;
 	margin-left: 10%;
 	margin-right: 5%;
-	opacity: 0.4;
+	opacity: 0.6;
 	height: 50px;
 	width: auto;
 	transition: 0.4s;
@@ -362,7 +367,8 @@ a:hover {
 #projects {
 	position: relative;
 	height: 100vh;
-	background: linear-gradient(180deg, rgba(241, 234, 209, 0.08) 0%, rgba(109,137,141,1) 50px);
+	background-color: #f1ead1;
+	/* background: linear-gradient(180deg, rgba(241, 234, 209, 0.08) 0%, rgba(109,137,141,1) 50px); */
 	z-index: 1;
 	padding-top: 50px;
 }

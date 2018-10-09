@@ -19,7 +19,7 @@ function main() {
             //Here you forgot to update the value
             scrollpos = window.scrollY;
         
-            if(scrollpos > 140){
+            if(scrollpos > 280){
                 add_class_on_scroll();
             }
             else {
