@@ -488,12 +488,14 @@ a:hover {
 }
 @media only screen and (max-width: 750px) {
 	#projects-grid {
+
 		height: 75%;
+		padding-top: 20%;
 		padding-left: 0.5%;
 		grid-template-columns: 50% 40% 10%;
 		grid-template-rows: repeat(3, 100px);
 		grid-gap: 12px;
-		grid-row-gap: 80px;
+		grid-row-gap: 50px;
 		grid-template-areas: "websites websites icon-web"
 							"web-apps web-apps icon-app"
 							"ds ds icon-ds";
