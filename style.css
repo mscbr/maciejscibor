@@ -75,6 +75,8 @@ html, body {
 	--logo-delay: 3s;
 	--drop-h-time: 0.8s;
 	--intro-display: none;
+	/* variables */
+	--radius-projects: 5px;
 }
 
 
@@ -377,8 +379,10 @@ a:hover {
 	font-size: 32px;
 	text-align: center;
 	font-weight: 400;
+	letter-spacing: 3px;
 	text-decoration: underline;
-	margin-bottom: 100px;
+	margin-top: 20px;
+	margin-bottom: 90px;
 }
 #projects-grid {
 	display: grid;
@@ -399,6 +403,7 @@ a:hover {
 	display: flex;
 	border-radius: 15px;
 	background-color: transparent;
+	transform: skewX(-5deg);
 	/* background: linear-gradient(90deg, rgba(5,17,24,1) 36%, rgba(241,234,209,0.1) 100%); */
 }
 #websites {	
@@ -428,8 +433,8 @@ a:hover {
 .thumbnail-left {
 	height: 100%;
 	width: 100%;
-	border-top-left-radius: 15px;
-	border-bottom-left-radius: 15px;
+	border-top-left-radius: var(--radius-projects);
+	border-bottom-left-radius: var(--radius-projects);
 	transition: 0.4s;
 	box-shadow: 10px 10px 5px 0px rgb(5,17,24);
 }
@@ -442,8 +447,8 @@ a:hover {
 .thumbnail-right {
 	height: 100%;
 	width: 100%;
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
+	border-top-right-radius: var(--radius-projects);
+	border-bottom-right-radius: var(--radius-projects);
 	transition: 0.4s;
 	box-shadow: 10px 10px 5px 0px rgb(5,17,24);
 }
