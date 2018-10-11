@@ -411,31 +411,54 @@ a:hover {
 	grid-area: websites;
 	z-index: 2;
 }
+#apps-mask {
+	grid-area: web-apps;
+	z-index: 2;
+}
+#ds-mask {
+	grid-area: ds;
+	z-index: 2;
+}
 .projects-mask {
 	position: absolute;
 	border-radius: var(--radius-projects);
-	color:#051118;
+	color:transparent;
 	text-align: center;
 	font-size: 75px;
-	padding-top: 5%;
+	padding-top: 7%;
 	font-weight: 100;
-	width: 110%;
-	height: 100%;
+	width: 101%;
+	height: 80%;
 	background-color:#f1ead1;
 	opacity: 0.8;
 	transition: 0.4s ease-out;
+	animation: font-in 0.5s ease-in forwards;
 }
-/* .projects-mask:hover {
-	display:none;
-} */
+@keyframes font-in{
+	30% {
+		color: transparent;
+	}
+	50% {
+		letter-spacing: -20px;
+	}
+	100% {
+		color: #051118;
+		font-size: 75px;
+	}
+}
 .proj-mask-off {
 	width: 0%;
 	color: transparent;
-	animation: font-shrink 0.1s linear forwards;
-	animation-delay: 0.2s;
+	animation: font-shrink 0.5s linear forwards;
 }
 @keyframes font-shrink {
+	
+	80% {
+		color: transparent;
+		font-size: 75px;
+	}
 	100% {
+		
 		font-size: 0%;
 	}
 }
