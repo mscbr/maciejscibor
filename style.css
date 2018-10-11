@@ -74,7 +74,7 @@ html, body {
 	--timing-function: cubic-bezier(.1,.44,.53,.99);
 	--logo-delay: 3s;
 	--drop-h-time: 0.8s;
-	--intro-display: initial;
+	--intro-display: none;
 	/* variables */
 	--radius-projects: 5px;
 }
@@ -423,12 +423,13 @@ a:hover {
 	position: absolute;
 	border-radius: var(--radius-projects);
 	color:transparent;
-	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-size: 75px;
-	padding-top: 7%;
 	font-weight: 100;
 	width: 101%;
-	height: 80%;
+	height: 103%;
 	background-color:#f1ead1;
 	opacity: 0.8;
 	transition: 0.4s ease-out;
@@ -560,7 +561,7 @@ a:hover {
 	#h3welcome-mask {
 		animation: none;
 	}
-
+	
 }
 @media only screen and (max-width: 1000px) {
 	#projects-grid {
@@ -570,7 +571,6 @@ a:hover {
 }
 @media only screen and (max-width: 750px) {
 	#projects-grid {
-
 		height: 75%;
 		padding-top: 20%;
 		padding-left: 0.5%;
@@ -593,4 +593,6 @@ a:hover {
 		align-items:  center;
 		transition: 0.4s;
 	}
+	
+	
 }
