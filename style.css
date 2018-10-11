@@ -74,7 +74,7 @@ html, body {
 	--timing-function: cubic-bezier(.1,.44,.53,.99);
 	--logo-delay: 3s;
 	--drop-h-time: 0.8s;
-	--intro-display: none;
+	--intro-display: initial;
 	/* variables */
 	--radius-projects: 5px;
 }
