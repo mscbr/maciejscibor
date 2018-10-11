@@ -40,6 +40,29 @@ function main() {
             });
         });
     });
+
+    //mask sliding off from project tiles in #projects section
+    function slideHover() {
+        var websitesMask = document.getElementById("websites-mask");
+        var websites = document.getElementById("websites");
+        // ... more variables
+
+        //ading event listeners
+        websitesMask.addEventListener("mouseover", downsize);
+        websites.addEventListener("mouseover", downsize);
+        websitesMask.addEventListener("mouseout", resize);
+        websites.addEventListener("mouseout", resize);
+
+
+        function downsize() {
+            websitesMask.classList.add("proj-mask-off");
+        }
+        function resize() {
+            websitesMask.classList.remove("proj-mask-off");
+        }
+
+    }
+    slideHover();
 }
 
 $(document).ready(main);

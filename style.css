@@ -371,7 +371,7 @@ a:hover {
 	height: auto;
 	background-color: #f1ead1;
 	/* background: linear-gradient(180deg, rgba(241, 234, 209, 0.08) 0%, rgba(109,137,141,1) 50px); */
-	z-index: 1;
+	/* z-index: 1; */
 	padding-top: 50px;
 }
 #projects>h2 {
@@ -399,12 +399,45 @@ a:hover {
 						"icon-app web-apps web-apps"
 						"ds ds icon-ds";
 }
+
 .projects-section {
 	display: flex;
 	border-radius: 15px;
 	background-color: transparent;
 	transform: skewX(-5deg);
 	/* background: linear-gradient(90deg, rgba(5,17,24,1) 36%, rgba(241,234,209,0.1) 100%); */
+}
+#websites-mask {
+	grid-area: websites;
+	z-index: 2;
+}
+.projects-mask {
+	position: absolute;
+	border-radius: var(--radius-projects);
+	color:#051118;
+	text-align: center;
+	font-size: 75px;
+	padding-top: 5%;
+	font-weight: 100;
+	width: 110%;
+	height: 100%;
+	background-color:#f1ead1;
+	opacity: 0.8;
+	transition: 0.4s ease-out;
+}
+/* .projects-mask:hover {
+	display:none;
+} */
+.proj-mask-off {
+	width: 0%;
+	color: transparent;
+	animation: font-shrink 0.1s linear forwards;
+	animation-delay: 0.2s;
+}
+@keyframes font-shrink {
+	100% {
+		font-size: 0%;
+	}
 }
 #websites {	
 	grid-area: websites;
