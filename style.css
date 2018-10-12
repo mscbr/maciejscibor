@@ -561,6 +561,9 @@ a:hover {
 	#h3welcome-mask {
 		animation: none;
 	}
+	.tiles-icon {
+		transform: scale(0.6);
+	}
 	
 }
 @media only screen and (max-width: 1000px) {
@@ -593,6 +596,23 @@ a:hover {
 		align-items:  center;
 		transition: 0.4s;
 	}
-	
+	#projects>h2 {
+		font-size: 25px;
+		margin-bottom: -39px;
+	}
+	.projects-mask {
+		font-size: 36px;
+	}
+	@keyframes font-in{
+		30% {
+			color: transparent;
+		}
+		50% {
+			letter-spacing: -20px;
+		}
+		100% {
+			color: #051118;
+			font-size: 36px;
+		}
 	
 }
