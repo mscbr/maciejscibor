@@ -74,7 +74,7 @@ html, body {
 	--timing-function: cubic-bezier(.1,.44,.53,.99);
 	--logo-delay: 3s;
 	--drop-h-time: 0.8s;
-	--intro-display: none;
+	--intro-display: initial;
 	/* variables */
 	--radius-projects: 5px;
 }
@@ -223,6 +223,8 @@ a {
 a:hover {
 	cursor: pointer;
 }
+
+/* NAVBAR */
 #navbar {
 	position: fixed;
 	
@@ -309,6 +311,8 @@ a:hover {
 		opacity: 0.4;
 	}
 }
+
+/* WELCOME */
 #welcome-section {
 	height: 100vh;
 	width: 100vw;
@@ -366,13 +370,16 @@ a:hover {
 		visibility: hidden;
 	}
 }
+
+/* PROJECTS */
 #projects {
 	position: relative;
-	height: auto;
+	height: 130%;
 	background-color: #f1ead1;
 	/* background: linear-gradient(180deg, rgba(241, 234, 209, 0.08) 0%, rgba(109,137,141,1) 50px); */
 	/* z-index: 1; */
 	padding-top: 50px;
+	margin-bottom: 98px;
 }
 #projects>h2 {
 	color: #051118;
@@ -382,13 +389,14 @@ a:hover {
 	letter-spacing: 3px;
 	text-decoration: underline;
 	margin-top: 20px;
-	margin-bottom: 90px;
+	margin-bottom: 60px;
 }
 #projects-grid {
 	display: grid;
 	width: 80%;
 	height: 95%;
 	margin: 15px auto;
+	margin-bottom: 60px;
 	padding: 25px;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -399,7 +407,6 @@ a:hover {
 						"icon-app web-apps web-apps"
 						"ds ds icon-ds";
 }
-
 .projects-section {
 	display: flex;
 	border-radius: 15px;
@@ -514,7 +521,49 @@ a:hover {
 	box-shadow: none;
 }
 
-
+/* CONTACTS */
+#contact {
+	width: auto;
+	height: auto;
+	padding: 30px;
+}
+#footer-logo {
+	width: 190px;
+	margin: 0 auto;
+	font-size: 54px;
+	font-weight: 900;
+	letter-spacing: 3px;
+	font-style: italic;
+	color: #f1ead1;
+	text-align: center;
+}
+#footer-logo>p {
+	
+	border: solid 1px;
+	border-radius: 30px;
+	padding: 5px;
+	padding-top: 0px;
+	padding-right: 3px;
+	
+}
+#footer-links {
+	text-align: center;
+	margin-top: 10px;
+}
+.contact-link {
+	margin: 15px;
+	font-size: 24px;
+}
+.contact-link:hover {
+	opacity: 0.6;
+}
+#footer-note {
+	font-weight: 100;
+	text-align: center;
+	font-size: 12px;
+	margin-top: 30px;
+	margin-bottom: 100px;
+}
 
 /*MEDIA QUERRIES*/
 @media only screen and (max-width: 650px) {
@@ -573,6 +622,9 @@ a:hover {
 	}
 }
 @media only screen and (max-width: 750px) {
+	#projects {
+		height 100%;
+	}
 	#projects-grid {
 		height: 75%;
 		padding-top: 20%;
@@ -598,7 +650,7 @@ a:hover {
 	}
 	#projects>h2 {
 		font-size: 25px;
-		margin-bottom: -39px;
+		margin-bottom: -40px;
 	}
 	.projects-mask {
 		font-size: 36px;
